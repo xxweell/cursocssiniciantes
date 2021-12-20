@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box; /* pra que o comportamento do elemento seja do tipo border-box, ou seja, os tamanhos sejam calculados através da borda */
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.container {
+  background-color: #333;
+  color: #eee;
+  width: 80%; /* significa que o elemento container ocupará SEMPRE 80% da largura da página*/
+  margin: auto; /* ajusta as margens para ficarem do mesmo tamanho, o que faz com que o elemento fique posicionado ao meio*/
+  padding: 20px;
+  border: 3px solid red;
+}
+
+.main-aside h2 {
+  text-align: center;
+}
+
+.main-aside ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.main-aside ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.main-aside ul a:hover {
+  background-color: red;
+}
+
+.main-aside ul a:visited {
+  color: rgb(70, 66, 66);
+}
+
+/* Formulário */
+
+.box {
+  width: 80%; /* 80% da pagina */
+  margin: auto;
+}
+
+.main-form {
+  margin-left: 20px;
+}
+
+.main-form .form-group {
+  margin-bottom: 10px;
+}
+
+.main-form .form-group input {
+  padding: 10px;
+  width: 100%; /* 100% da div box (que esta definida como 80%) */
+}
+
+.main-form .form-group label {
+  display: block;
+}
+
+.button {
+  padding: 15px;
+  background-color: #333;
+  color: #eee;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Positions */
+.relative {
+  top: 10px;
+  position: relative;
+  border: 3px solid #333;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.relative .absolute {
+  position: absolute;
+  bottom: 0;
+  border: 3px solid #333;
+}
+
+.relative .absolute h1 {
+  margin: 0;
+}
+
+/* Barra de navegação */
+#main-navbar {
+  background: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 10px;
+  position: sticky;
+  top: 0;
+}
+
+.fixed-button {
+  background: #333;
+  color: #eee;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+}
+
+/* Categories */
+.categories ul {
+  list-style: none;
+}
+
+/* primeiro filho do ul -> seleciona como li:first-child*/
+.categories ul li:first-child {
+  color: red;
+}
+
+.categories ul li:last-child {
+  color: green;
+}
+
+/* li:nth-child(3) me deixa escolher qual dos filhos de ul quero estilizar */
+.categories ul li:nth-child(3) {
+  color: blue;
+}
+
+/* pra pegar os filhos pares  */
+.categories ul li:nth-child(even) {
+  background-color: #333;
+}
+
+/* pra pegar os filhos pares  */
+.categories ul li:nth-child(odd) {
+  background-color: #eee;
+}
+
+/* Link do curso: https://www.youtube.com/watch?v=r11FflkQqJs&list=WL&index=58&ab_channel=FelipeRocha%E2%80%A2dicasparadevs */
